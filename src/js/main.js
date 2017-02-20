@@ -30,6 +30,10 @@ function placeAboutMe(data) {
     picture(data);
 }
 function picture(data){
-  console.log(data);
   $(".picture").html(`<img src = "${data.avatar_url}"/>`);
+  myName(data);
+}
+function myName(data){
+  console.log(data);
+  $(".header").html(`${data.name}`);
 }
